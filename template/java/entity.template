@@ -1,0 +1,12 @@
+${PACKAGE}
+${IMPORTS}
+
+public class ${CLASS_NAME} ${EXTENDS}{
+    ${FIELDS}
+    
+    public ${CLASS_NAME}() {
+        super();
+    }
+    
+    ${GETTER_SETTERS}
+}
