@@ -5,11 +5,23 @@
       "attrs":[
           {
             "name": "username",
-            "type": "STRING",
-            ""
+            "type": "String",
+            "length": 64,
+            "dbType": "varchar"
           }
       ]
     }, 
+    {
+      "name": "role",
+      "attrs": [
+        {
+          "name": "password",
+          "type": "String",
+          "length": 64,
+          "dbType": "varchar"
+        }
+      ]
+    }
   ],
   "relations": [
   
