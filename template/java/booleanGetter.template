@@ -1,0 +1,3 @@
+public boolean is${FIELD_NAME_CAP}() {
+    return this.${FIELD_NAME};
+}
