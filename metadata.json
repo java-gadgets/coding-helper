@@ -69,7 +69,22 @@
         "User",
         "Role"
       ]
-    } 
+    },
+    {
+      "name": "RolePermission",
+      "entityTuple": [
+        "Role",
+        "Permission"
+      ]
+    },
+    {
+      "name": "UserPermission",
+      "entityTuple": [
+        "User",
+        "Role",
+        "Permission"
+      ]
+    }
   ],
   "config":{
     "packPrefix": "org.pplm.utils.rbac",
