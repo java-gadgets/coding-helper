@@ -8,6 +8,10 @@
           "type": "String"
         },
         {
+          "name": "isDelete",
+          "type": "int"
+        },
+        {
           "name": "creater",
           "type": "String"
         },
@@ -16,9 +20,11 @@
           "type": "Date"
         },
         {
-          ""
+          "name": "modifier",
+          "type": "String"
         }
-      ]
+      ],
+      "isExtened": true
     },
     {
       "name": "User",
@@ -27,23 +33,46 @@
             "name": "username",
             "type": "String"
           }
-      ],
-      "extends": "Base"
+      ]
     }, 
     {
       "name": "Role",
       "attrs": [
         {
-          "name": "password",
+          "name": "name",
+          "type": "String"
+        },
+        {
+          "name": "tag",
+          "type": "String"
+        }
+      ]
+    },
+    {
+      "name": "Permission",
+      "attrs": [
+        {
+          "name": "name",
+          "type": "String"
+        },
+        {
+          "name": "tag",
           "type": "String"
         }
       ]
     }
   ],
   "relations": [
-  
+    {
+      "name": "UserRole",
+      "entityTuple": [
+        "User",
+        "Role"
+      ]
+    } 
   ],
   "config":{
-    
+    "packPrefix": "org.pplm.utils.rbac",
+    "packEntity": "entity"
   }
 }
