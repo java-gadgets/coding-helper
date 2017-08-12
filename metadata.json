@@ -1,0 +1,20 @@
+{
+  "entities": [
+    {
+      "name": "user",
+      "attrs":[
+          {
+            "name": "username",
+            "type": "STRING",
+            ""
+          }
+      ]
+    }, 
+  ],
+  "relations": [
+  
+  ],
+  "config":{
+    
+  }
+}
