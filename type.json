@@ -1,0 +1,17 @@
+[
+  {
+    "name": "String",
+  },
+  {
+    "name": "int",
+  },
+  {
+    "name": "Date",
+    "importStr": "java.util.Date"
+  },
+  {
+    "name": "sqlDate",
+    "srcKey": "Date",
+    "importStr": "java.sql.Date"
+  }
+]
