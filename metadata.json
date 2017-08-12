@@ -1,24 +1,41 @@
 {
   "entities": [
     {
-      "name": "user",
-      "attrs":[
+      "name": "Base",
+      "attrs": [
+        {
+          "name": "id",
+          "type": "String"
+        },
+        {
+          "name": "creater",
+          "type": "String"
+        },
+        {
+          "name": "createdTime",
+          "type": "Date"
+        },
+        {
+          ""
+        }
+      ]
+    },
+    {
+      "name": "User",
+      "attrs": [
           {
             "name": "username",
-            "type": "String",
-            "length": 64,
-            "dbType": "varchar"
+            "type": "String"
           }
-      ]
+      ],
+      "extends": "Base"
     }, 
     {
-      "name": "role",
+      "name": "Role",
       "attrs": [
         {
           "name": "password",
-          "type": "String",
-          "length": 64,
-          "dbType": "varchar"
+          "type": "String"
         }
       ]
     }
