@@ -1,4 +1,5 @@
 {
+  "name": "rbac",
   "entities": [
     {
       "name": "Base",
@@ -24,7 +25,7 @@
           "type": "String"
         }
       ],
-      "isExtened": true
+      "extended": true
     },
     {
       "name": "User",

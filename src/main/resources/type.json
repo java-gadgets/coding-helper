@@ -1,13 +1,7 @@
 [
   {
-    "type": "String",
-  },
-  {
-    "type": "int",
-  },
-  {
     "type": "Date",
-    "importStr": "java.util.Date",
+    "importStr": "java.util.Date"
   },
   {
     "type": "sqlDate",
