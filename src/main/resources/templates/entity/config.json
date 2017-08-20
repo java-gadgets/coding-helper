@@ -1,0 +1,7 @@
+{
+  "is": "is.template",
+  "entity": "entity.template",
+  "field": "field.template",
+  "getter": "getter.template",
+  "setter": "setter.template"
+}

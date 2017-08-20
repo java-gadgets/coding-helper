@@ -1,7 +1,7 @@
 ${PACKAGE}
 ${IMPORTS}
 
-public class ${CLASS_NAME} ${EXTENDS}{
+public class ${CLASS_NAME} ${EXTEND} {
     ${FIELDS}
     
     public ${CLASS_NAME}() {

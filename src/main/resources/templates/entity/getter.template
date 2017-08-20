@@ -1,3 +1,4 @@
     public ${TYPE} get${FIELD_NAME_CAP}() {
         return this.${FIELD_NAME};
     }
+    

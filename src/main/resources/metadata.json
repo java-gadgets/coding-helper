@@ -23,21 +23,31 @@
         {
           "name": "modifier",
           "type": "String"
+        },
+        {
+          "name": "modifiedTime",
+          "type": "Date"
         }
       ],
       "extended": true
     },
     {
       "name": "User",
+      "relationPrefix": "user",
       "attrs": [
           {
             "name": "username",
+            "type": "String"
+          },
+          {
+            "name": "passsword",
             "type": "String"
           }
       ]
     }, 
     {
       "name": "Role",
+      "relationPrefix": "role",
       "attrs": [
         {
           "name": "name",
@@ -51,6 +61,7 @@
     },
     {
       "name": "Permission",
+      "relationPrefix": "perm",
       "attrs": [
         {
           "name": "name",
@@ -69,14 +80,46 @@
       "entityTuple": [
         "User",
         "Role"
-      ]
+      ],
+      "filter": {
+      	"User": [
+      	  "isDelete",
+      	  "creater",
+      	  "createdTime",
+      	  "modifier",
+      	  "modifiedTime"
+      	],
+      	"Role": [
+      	  "isDelete",
+      	  "creater",
+      	  "createdTime",
+      	  "modifier",
+      	  "modifiedTime"
+      	]
+      }
     },
     {
       "name": "RolePermission",
       "entityTuple": [
         "Role",
         "Permission"
-      ]
+      ],
+      "filter": {
+        "Role": [
+      	  "isDelete",
+      	  "creater",
+      	  "createdTime",
+      	  "modifier",
+      	  "modifiedTime"
+      	],
+      	"Permission": [
+      	  "isDelete",
+      	  "creater",
+      	  "createdTime",
+      	  "modifier",
+      	  "modifiedTime"
+      	]
+      }
     },
     {
       "name": "UserPermission",
@@ -84,7 +127,30 @@
         "User",
         "Role",
         "Permission"
-      ]
+      ],
+      "filter": {
+        "User": [
+      	  "isDelete",
+      	  "creater",
+      	  "createdTime",
+      	  "modifier",
+      	  "modifiedTime"
+      	],
+        "Role": [
+      	  "isDelete",
+      	  "creater",
+      	  "createdTime",
+      	  "modifier",
+      	  "modifiedTime"
+      	],
+      	"Permission": [
+      	  "isDelete",
+      	  "creater",
+      	  "createdTime",
+      	  "modifier",
+      	  "modifiedTime"
+      	]
+      }
     }
   ],
   "config":{

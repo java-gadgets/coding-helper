@@ -8,6 +8,7 @@ import java.util.Collection;
  */
 public class Entity {
 	private String name;
+	private String relationPrefix;
 	private Collection<EntityAttr> attrs;
 	private boolean extended;
 	
@@ -21,6 +22,14 @@ public class Entity {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getRelationPrefix() {
+		return relationPrefix;
+	}
+
+	public void setRelationPrefix(String relationPrefix) {
+		this.relationPrefix = relationPrefix;
 	}
 
 	public Collection<EntityAttr> getAttrs() {

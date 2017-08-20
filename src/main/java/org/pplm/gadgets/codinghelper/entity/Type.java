@@ -13,12 +13,12 @@ public class Type {
 	/**
 	 * 需要在代码开始时导入的类声明
 	 */
-	private String importStr;
+	private String importSrc;
 	
 	/**
 	 * 代码中组装的类型字符串
 	 */
-	private String srcKey;
+	private String keySrc;
 
 	public Type() {
 		super();
@@ -32,20 +32,20 @@ public class Type {
 		this.type = type;
 	}
 
-	public String getImportStr() {
-		return importStr;
+	public String getImportSrc() {
+		return importSrc;
 	}
 
-	public void setImportStr(String importStr) {
-		this.importStr = importStr;
+	public void setImportSrc(String importSrc) {
+		this.importSrc = importSrc;
 	}
 
-	public String getSrcKey() {
-		return srcKey;
+	public String getKeySrc() {
+		return keySrc;
 	}
 
-	public void setSrcKey(String srcKey) {
-		this.srcKey = srcKey;
+	public void setKeySrc(String keySrc) {
+		this.keySrc = keySrc;
 	}
 	
 }

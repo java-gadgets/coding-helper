@@ -1,0 +1,21 @@
+spring:
+  main:
+    banner-mode: "off"
+
+logging:
+  level:
+    root: INFO
+
+management:
+  contextPath: /actuator
+  security:
+    enabled: false
+
+codinghelp:
+  app:
+    metadata: metadata.json
+    type: type.json
+  template: 
+    path: templates
+    encoding: utf-8
+    config: config.json

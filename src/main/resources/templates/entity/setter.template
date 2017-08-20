@@ -1,3 +1,4 @@
     public void set${FIELD_NAME_CAP}(${TYPE} ${FIELD_NAME}) {
         this.${FIELD_NAME} = ${FIELD_NAME};
     }
+    
