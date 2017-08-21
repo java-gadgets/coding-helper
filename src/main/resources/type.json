@@ -1,11 +1,11 @@
 [
   {
     "type": "Date",
-    "importStr": "java.util.Date"
+    "importSrc": "java.util.Date"
   },
   {
     "type": "sqlDate",
-    "srcKey": "Date",
-    "importStr": "java.sql.Date"
+    "keySrc": "Date",
+    "importSrc": "java.sql.Date"
   }
 ]

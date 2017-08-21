@@ -1,7 +1,10 @@
 {
-  "is": "is.template",
+  "package": "package.template",
+  "import": "import.template",
+  "class-extends": "class-extends.template",
   "entity": "entity.template",
   "field": "field.template",
+  "is": "is.template",
   "getter": "getter.template",
   "setter": "setter.template"
 }

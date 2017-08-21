@@ -1,11 +1,13 @@
-package org.pplm.gadgets.codinghelper.template;
+package org.pplm.gadgets.codinghelper.generater;
 
-import org.apache.commons.lang3.StringUtils;
 import org.pplm.gadgets.codinghelper.config.TypeConfig;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class FieldGenerater extends Generater {
-
-	private String fieldName;
+	private static Logger logger = LoggerFactory.getLogger(FieldGenerater.class);
+	
+	protected String fieldName;
 	private String type;
 	
 	public FieldGenerater(String template, TypeConfig typeConfig) {
@@ -13,10 +15,11 @@ public class FieldGenerater extends Generater {
 	}
 
 	@Override
-	public String genSrc() {
-		return template.replaceAll(REPLACED_FIELD_NAME, fieldName)
-		.replaceAll(REPLACED_FIELD_NAME_CAP, StringUtils.capitalize(fieldName))
-		.replaceAll(REPLACED_TYPE, typeConfig.getKeySrc(type));
+	protected String genSrcImpl() {
+		String content = template.replaceAll(REPLACED_FIELD_NAME, fieldName);
+		logger.debug(type + "," + typeConfig.getKeySrc(type));
+		content = content.replaceAll(REPLACED_TYPE, typeConfig.getKeySrc(type));
+		return content;
 	}
 
 	public String getFieldName() {

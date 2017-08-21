@@ -28,12 +28,12 @@
           "name": "modifiedTime",
           "type": "Date"
         }
-      ],
-      "extended": true
+      ]
     },
     {
       "name": "User",
       "relationPrefix": "user",
+      "extend": "Base",
       "attrs": [
           {
             "name": "username",
@@ -42,12 +42,17 @@
           {
             "name": "passsword",
             "type": "String"
+          },
+          {
+            "name": "admin",
+            "type": "Boolean"
           }
       ]
     }, 
     {
       "name": "Role",
       "relationPrefix": "role",
+      "extend": "Base",
       "attrs": [
         {
           "name": "name",
@@ -62,6 +67,7 @@
     {
       "name": "Permission",
       "relationPrefix": "perm",
+      "extend": "Base",
       "attrs": [
         {
           "name": "name",
@@ -77,6 +83,7 @@
   "relations": [
     {
       "name": "UserRole",
+      "extend": "Base",
       "entityTuple": [
         "User",
         "Role"
@@ -100,6 +107,7 @@
     },
     {
       "name": "RolePermission",
+      "extend": "Base",
       "entityTuple": [
         "Role",
         "Permission"
@@ -123,6 +131,7 @@
     },
     {
       "name": "UserPermission",
+      "extend": "Base",
       "entityTuple": [
         "User",
         "Role",

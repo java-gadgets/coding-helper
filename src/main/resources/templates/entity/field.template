@@ -1,1 +1,1 @@
-private ${TYPE} ${FIELD_NAME};
+    private ${TYPE} ${FIELD_NAME};
